@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Bootstrap</title>
+
+    <!--Necesseary to have this link so that boostrap can be included in our website-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    crossorigin="anonymous">
+
+    <!--if we are satisfied with any style provided by the bootstrap,then we can also provide custom 
+    stying in our css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+    <!--in bootstrap the coln has 12 lines,so we can adjust our columns accordingly,
+    if we do not mention anything,then each col will take space of -> 12/(no of columns)-->
+    <div class="container">
+        <div class="row">
+
+            <!--this says that if the window size is small,then width of each coln will be 6,3,4,since there are 
+            only 12 lines,so 3rd coln then be on the 2nd line -->
+
+            <!--col-md-12   this says that if the screen size is medium,then each coln will occupy 12,6,6 space
+            ie 1st coln will be on the 1st line and 2nd and 3rd coln will be on the 2nd line-->
+            <div class="col col-sm-6  col-md-12  col-lg-12">
+              Column1
+            </div>
+            <div class="col col-sm-3  col-md-6   col-lg-12">
+              Column2
+            </div>
+            <div class="col  col-sm-4  col-md-6  col-lg-12">
+                Column3
+            </div>
+           
+
+        </div>    
+    </div>
+    
+  <!--include this js script files,so that we can also provide some actions,on  our Ui,
+  have write this in here in body section instead of head because then user need to wait 
+  to see our initial website,until this files also loads up-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</body>
+</html>
