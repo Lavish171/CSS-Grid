@@ -17,3 +17,32 @@ h1{
     font-size: 3rem;
     color: white;
 }
+
+hr{
+  border-color: #F05F44;
+  border-width: 3px;
+}
+
+
+.btn-xl
+{
+    /*1 rem on the sides and 2 rem for the top and bottom*/
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 300px;
+    padding: 1rem 2rem;
+    background-color: rgb(216, 93, 11);
+    border-color:rgb(216, 93, 11);
+}
+
+.btn-xl:hover
+{
+
+    /*we want that when we hover over the button,then it should have the same color,should not change it color
+    and another thing that we want that when we hover over the button,then it should appear slightly largened*/
+    background-color: rgb(216, 93, 11);
+    border-color:rgb(216, 93, 11);
+    border-width: 4px;
+}
+
+
