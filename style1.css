@@ -11,38 +11,46 @@ body,html{
     background-size: cover;
 }
 
-h1{
-    text-align: center;
-    margin-top: auto;
-    font-size: 3rem;
-    color: white;
-}
 
-hr{
-  border-color: #F05F44;
-  border-width: 3px;
-}
+/*added a buffer to give some margin between the heading 
+and button*/
 
-
-.btn-xl
+.buffer
 {
-    /*1 rem on the sides and 2 rem for the top and bottom*/
+    height: 8rem;
+}
+
+hr {
+    border-top: 4px solid red;
+    max-width: 1px;
+  }
+
+.btn {
     font-weight: 700;
-    text-transform: uppercase;
     border-radius: 300px;
-    padding: 1rem 2rem;
-    background-color: rgb(216, 93, 11);
-    border-color:rgb(216, 93, 11);
-}
-
-.btn-xl:hover
-{
-
-    /*we want that when we hover over the button,then it should have the same color,should not change it color
-    and another thing that we want that when we hover over the button,then it should appear slightly largened*/
-    background-color: rgb(216, 93, 11);
-    border-color:rgb(216, 93, 11);
+    text-transform: uppercase;
+  }
+  
+  .btn-primary {
+    background-color: #F05F44;
+    border-color: #F05F44;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ee4b08;
+    border-color: #ee4b08;
     border-width: 4px;
-}
+  }
+  
+  .btn-xl {
+    padding: 1rem 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #e2dbdb;
+  }
+  
+  
 
 
