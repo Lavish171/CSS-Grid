@@ -20,7 +20,27 @@
 
     /*all colns of equal size/proportion*/
 
+   /* grid-template-columns: 1fr 1fr 2fr;*/
+    
+    /*insted of this,if we want to repeat some columns of same width,then we can also use the repeat function*/
+
+    grid-template-columns: repeat(2,1fr) 2fr;
+
+    /*since we have placed auto,so the width of the cell containing the two dogs,will be get adjusted.*/
+
+    grid-template-columns: auto 1fr 2fr;
+
+    /*in these line you will basically see what help the auto does to us*/
     grid-template-columns: 1fr 1fr 2fr;
+
+
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+
+    /*if there would have been more rows,then the pattern gets repeating,
+      since here,1st row will have 1 unit space,2nd row have 2fr space,so 
+      if there would have been more rows,then the pattern gets repeated,
+      ie 3rd row will consist of 1 fr space and 4th row of 2fr space and so on*/
+
 
 
 }
