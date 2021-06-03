@@ -34,14 +34,22 @@
     grid-template-columns: 1fr 1fr 2fr;
 
 
+    /*-->>>Great way to make the website responsive over the small scrren size as well*/
+
+    grid-template-columns:repeat(auto-fill,300px);
+
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+
+
     grid-template-rows: 1fr 2fr 2fr 2fr;
 
     /*if there would have been more rows,then the pattern gets repeating,
       since here,1st row will have 1 unit space,2nd row have 2fr space,so 
       if there would have been more rows,then the pattern gets repeated,
       ie 3rd row will consist of 1 fr space and 4th row of 2fr space and so on...*/
+   
 
-
+     /*justify-items: end;*/
 
 }
 
